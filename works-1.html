@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>HE ZIYIN ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <img src="img/favicon.ico" alt="favicon">
+          <a href="index.html">HE ZIYIN</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article article--deco">
+        <div class="article-container article-container--wide">
+          <h2 class="article-title">テイクアウト注文サイト</h2>
+          <div class="article-body article-body--two-col">
+
+            <!-- 左カラム：その他の項目 -->
+            <section class="article-col article-col--info">
+            <p>
+              架空の飲食店専用のテイクアウト予約アプリ「SAMURAI Kitchen Order」です。
+              <br>「注文してから待たされる時間がもったいない」「人気のメニューを確実に確保したい」といった大きな課題を解決するために、
+              注文の受付と管理を行うことができるWebアプリケーションです。
+            </p>
+            <h3>URL</h3>
+            <div style="margin-left: 10px !important;">
+              <h5>webサイト</h5>
+              <p><a href="https://samurai-kitchen-order-834c5e463b12.herokuapp.com/" target="_blank" rel="noopener">https://samurai-kitchen-order-834c5e463b12.herokuapp.com/</a></p>
+          <h5>GitHub</h5>
+              <p><a href="https://github.com/hardBoxzy/nextjs-takeout-kadai" target="_blank" rel="noopener">https://github.com/hardBoxzy/nextjs-takeout-kadai</a></p>
+            </div>
+            <h3>使用技術</h3>
+            <p>Next.js/React/TypeScript/HTML/CSS/Tailwind CSS</p>
+            <h3>実装機能（要件定義）</h3>
+            <table class="excel-table">
+                <tbody>
+                    <!-- ユーザー側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【ユーザー側実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">メニュー情報</td>
+                        <td class="feature-cell">
+                            ■ メニューを閲覧できる（新着、価格順に並べ替える）<br>
+                            ■ メニューを検索できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">メニュー注文</td>
+                        <td class="feature-cell">
+                            ■ メニューをカートに追加できる<br>
+                            ■ ユーザー氏名、電話番号、受取日時などの情報を入力してメニューを注文できる
+                        </td>
+                    </tr>
+
+                    <!-- 管理者側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【管理者側実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">注文管理</td>
+                        <td class="feature-cell">
+                            ■ 注文を一覧できる<br>
+                            ■ 注文のステータスを更新できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">メニュー管理</td>
+                        <td class="feature-cell">
+                            ■ メニューを一覧、登録、編集、削除できる
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+
+            <!-- 右カラム：ページ一覧 -->
+            <section class="article-col article-col--pages">
+              <div class="gallery">
+                <!-- サムネイル一覧（2行） -->
+                <ul class="gallery-thumbs">
+                  <li><button type="button" class="gallery-thumb is-active" title="トップページ"><img src="img/works-detail/works-1.png" alt="トップページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="メニュー詳細ページ"><img src="img/works-detail/works-1-3.png" alt="メニュー詳細ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="ショッピングカートページ"><img src="img/works-detail/works-1-4.png" alt="ショッピングカートページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="注文確認ページ"><img src="img/works-detail/works-1-5.png" alt="注文確認ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="管理者ログインページ"><img src="img/works-detail/works-1-6.png" alt="管理者ログインページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="管理者メニュー管理ページ"><img src="img/works-detail/works-1-7.png" alt="管理者メニュー管理ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="商品登録／編集ページ"><img src="img/works-detail/works-1-8.png" alt="商品登録／編集ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="注文管理ページ"><img src="img/works-detail/works-1-9.png" alt="注文管理ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="メニュー一覧ページ"><img src="img/works-detail/works-1-2.png" alt="メニュー一覧ページ"></button></li>
+                </ul>
+                <!-- 選択中の画像 -->
+                <figure class="gallery-main">
+                  <figcaption class="gallery-caption">トップページ</figcaption>
+                  <img class="works-detail-img gallery-main-img" src="img/works-detail/works-1.png" alt="トップページ">
+                </figure>
+              </div>
+            </section>
+          </div>
+          <div class="home-link">
+            <a href="index.html#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy; 2026 HEZIYIN PORTOFOLIO. All Rights Reserved.</div>
+    </footer>
+    <!-- /footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

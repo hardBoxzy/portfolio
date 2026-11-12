@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>HE ZIYIN ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+ </head>
+
+<body>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <img src="img/favicon.ico" alt="favicon">
+          <a href="index.html">HE ZIYIN</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article article--deco">
+        <div class="article-container article-container--wide">
+          <h2 class="article-title">飲食店予約サイト</h2>
+          <div class="article-body article-body--two-col">
+
+
+            <!-- 右カラム：その他の項目 -->
+            <section class="article-col article-col--info">
+            <p>
+              JAVAのSpring Bootで作成した食べログ風の飲食店予約サイト「NAGOYAMESHI」です。
+              <br>月額300円の有料会員になれば、予約やレビューの投稿、お気に入りの追加が可能になります。
+              <br>管理者はサービスの基本情報設定、店舗情報の登録、会員管理、サブスクの売上管理ができます。
+              <br>サブスクは外部決済サービスstripeを利用します。店舗画像はAWS S3に保存されます。
+              
+            </p>
+            <h3>URL</h3>
+            <div style="margin-left: 10px !important;">
+              <h5 >webサイト</h5>
+              <p ><a href="https://nagoyameshi-heziyin-d821338655bd.herokuapp.com/" target="_blank" rel="noopener" >https://nagoyameshi-heziyin-d821338655bd.herokuapp.com/</a></p>
+              <h5 >github</h5>
+              <p><a href="https://github.com/hardBoxzy/springboot-tabelog-kadai/tree/main/kadai_002/nagoyameshi" target="_blank" rel="noopener">https://github.com/hardBoxzy/springboot-tabelog-kadai/tree/main/kadai_002/nagoyameshi</a></p>
+            </div>
+                        <h3>使用技術</h3>
+            <p>JAVA/Spring Boot/JavaScript/HTML/CSS</p>
+            <h3>実装機能（要件定義）</h3>
+            <table class="excel-table">
+                <tbody>
+                    <!-- ユーザー側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【会員共通機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">会員登録</td>
+                        <td class="feature-cell">
+                            ■ QQmailのAPIを利用したmail認証機能をを通してユーザー登録ができる<br>
+                            ■ ログイン、ログアウトができる<br>
+                            ■ パスワードresetができる(メール認証を通してパスワードが再発行される)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">店舗情報</td>
+                        <td class="feature-cell">
+                            ■ 店舗を閲覧できる<br>
+                            ■ 店舗を新着、価格順に並べ替えられる<br>
+                            ■ 店舗を店舗名、住所、カテゴリー、価格別に検索できる
+                        </td>
+                    </tr>
+
+                    <!-- 有料会員実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【有料会員実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">レビュー投稿</td>
+                        <td class="feature-cell">
+                            ■ レビューを投稿できる<br>
+                            ■ 投稿したレビューを編集、削除できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">お気に入り登録</td>
+                        <td class="feature-cell">
+                            ■ お気に入りの店舗を登録、削除できる<br>
+                            ■ お気に入り店舗を一覧できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">店舗予約</td>
+                        <td class="feature-cell">
+                            ■ 予約日時、人数などの情報を入力して店舗を予約できる<br>
+                            ■ 予約情報を一覧できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">アップグレード</td>
+                        <td class="feature-cell">
+                            ■ 外部決済サービスstripeを利用したクレジットカード決済機能で、月額300円のサブスク課金ができる<br>
+                            ■ クレジットカード情報を削除して、有料会員を解約できる
+                        </td>
+                    </tr>
+
+                    <!-- 管理者側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【管理者側実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">予約管理</td>
+                        <td class="feature-cell">
+                            ■ 予約を一覧できる<br>
+                            ■ 予約のステータスを更新できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">カテゴリ管理</td>
+                        <td class="feature-cell">
+                            ■ 店舗のカテゴリを一覧、登録、編集、削除できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">店舗管理</td>
+                        <td class="feature-cell">
+                            ■ 店舗を一覧、登録、編集、削除できる<br>
+                            ■ 店舗一覧情報をCSVで出力できる<br>
+                            ■ 店舗をCSVで一括登録できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">会員管理</td>
+                        <td class="feature-cell">
+                            ■ 会員を一覧できる<br>
+                            ■ 会員一覧情報をCSVに出力できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">売り上げ管理</td>
+                        <td class="feature-cell">
+                            ■ 売り上げの一覧と合計を閲覧できる<br>
+                            ■ 特定の期間の売り上げを検索できる
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+                        <!-- 左カラム：ページ一覧 -->
+            <section class="article-col article-col--pages">
+              <div class="gallery">
+                <!-- サムネイル一覧（2行） -->
+                <ul class="gallery-thumbs">
+                  <li><button type="button" class="gallery-thumb is-active" title="トップページ"><img src="img/works-detail/works-2-1.png" alt="トップページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="ログインページ"><img src="img/works-detail/works-2-2.png" alt="ログインページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会員登録ページ"><img src="img/works-detail/works-2-3.png" alt="会員登録ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="店舗一覧ページ"><img src="img/works-detail/works-2-4.png" alt="店舗一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="店舗詳細ページ"><img src="img/works-detail/works-2-5.png" alt="店舗詳細ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="レビュー投稿・編集ページ"><img src="img/works-detail/works-2-6.png" alt="レビュー投稿・編集ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="パスワードリセットページ"><img src="img/works-detail/works-2-7.png" alt="パスワードリセットページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会員情報ページ"><img src="img/works-detail/works-2-8.png" alt="会員情報ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="サブスク確認ページ"><img src="img/works-detail/works-2-9.png" alt="サブスク確認ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="サブスク決済・キャンセルページ"><img src="img/works-detail/works-2-10.png" alt="サブスク決済・キャンセルページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="予約一覧ページ"><img src="img/works-detail/works-2-11.png" alt="予約一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="お気に入り一覧ページ"><img src="img/works-detail/works-2-12.png" alt="お気に入り一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="レビュー一覧ページ"><img src="img/works-detail/works-2-13.png" alt="レビュー一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会員一覧・詳細ページ（管理者向け）"><img src="img/works-detail/works-2-14.png" alt="会員一覧・詳細ページ（管理者向け）"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="カテゴリー管理ページ"><img src="img/works-detail/works-2-15.png" alt="カテゴリー管理ページ）"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="売上管理ページ"><img src="img/works-detail/works-2-16.png" alt="売上管理ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会社概要ページ"><img src="img/works-detail/works-2-17.png" alt="会社概要ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="店舗一覧ページ(管理者向け)"><img src="img/works-detail/works-2-18.png" alt="店舗一覧ページ(管理者向け)"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="店舗詳細・編集ページ(管理者向け)"><img src="img/works-detail/works-2-19.png" alt="店舗詳細・編集ページ(管理者向け)"></button></li>
+                </ul>
+                <!-- 選択中の画像 -->
+                <figure class="gallery-main">
+                  <figcaption class="gallery-caption">トップページ</figcaption>
+                  <img class="works-detail-img gallery-main-img" src="img/works-detail/works-2-1.png" alt="トップページ">
+                </figure>
+              </div>
+            </section>
+          </div>
+          <div class="home-link">
+            <a href="index.html#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy; 2026 HEZIYIN PORTOFOLIO. All Rights Reserved.</div>
+    </footer>
+    <!-- /footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+  <script src="js/gallery.js"></script></body>
+</html>

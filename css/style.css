@@ -1,0 +1,776 @@
+body {
+  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.wrapper {
+  padding-top: 73px;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: .05em;
+}
+
+.header-logo a {
+  color: #333;
+}
+
+.gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gnav-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #333;
+}
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.gnav-item a:hover:after {
+  width: 100%;
+}
+
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
+.mv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+
+.mv-container {
+  position: relative;
+  padding: 0 20px;
+}
+
+.mv-container img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+
+.works-item {
+  width: 31.74603%;
+  margin-right: 1.58730%;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.works-item:hover {
+  opacity: .8;
+}
+
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.works-img img {
+  border: 1px solid #e6e6e6;
+}
+
+.works-detail-img {
+  border: 2px solid #c9c9c9;
+}
+
+.carousel-parts {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.works-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.works-info {
+  font-size: 10px;
+  margin-top: 5px;
+}
+/* 左の矢印を外側へ移動 */
+.slick-prev {
+  left: -40px !important; /* 初期値の -25px からさらに外側へ */
+}
+/* 右の矢印を外側へ移動 */
+.slick-next {
+ /*  right: -40px !important; 初期値の -25px からさらに外側へ */
+}
+
+/* slickの標準フォント（slick.scss由来）の矢印の色を変える場合 */
+.slick-prev:before,
+.slick-next:before {
+  color: #acacac !important; /* 矢印の色 */
+  font-size: 40px !important; /* 必要に応じてサイズ変更も可能 */
+  opacity: 0.8; /* ホバー時の透過度などを調整したい場合 */
+}
+
+/* ホバーしたときの色を変える場合 */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #0000ff; /* ホバー時の色 */
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.skill-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  margin-bottom: 10px;
+}
+
+.skill-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/*--------------------------------
+ About
+---------------------------------*/
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.profile-img {
+  width: 20%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.profile-img img {
+  border-radius: 50%;
+}
+.profile-body {
+  flex: 1;
+}
+
+.profile-body p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.profile-body p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ Contact
+---------------------------------*/
+.contact {
+  text-align: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4c4c4c;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+  background-color: #333;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #797979;
+}
+
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
+.article {
+  padding: 120px 0;
+}
+
+.article-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.article-body h3 {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+}
+
+.article-body img {
+  width: 100%;
+  height: auto;
+}
+
+.article-body h3:not(:first-child) {
+  margin-top: 50px;
+}
+
+.article-body h3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  border-radius: 3px;
+  background-color: #333;
+}
+
+.article-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.home-link {
+  text-align: center;
+}
+
+/*--------------------------------
+ 2カラムレイアウト（幅2倍）
+---------------------------------*/
+.article-container--wide {
+  max-width: 2080px;
+}
+
+.article-body--two-col {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 5fr 5fr; /* ページ一覧 : その他 = 4 : 6 */
+  column-gap: 40px;
+  align-items: start;
+}
+
+/* 右下に三角構図のイラストを背景として配置（底をフッター側に接地）
+   横位置は本文（最大1440px）の右端にそろえる */
+.article--deco {
+  background: url("../img/bg-triangle.svg") no-repeat;
+  background-position: right max(0px, calc(50vw - 1200px)) bottom 0;
+  background-size: min(50vw, 900px) auto;
+}
+
+/* slickがグリッド内ではみ出さないようにする */
+.article-col {
+  min-width: 0;
+}
+
+.article-col .excel-table {
+  max-width: none;
+}
+
+/*--------------------------------
+ サムネイルギャラリー（ページ一覧）
+---------------------------------*/
+.gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 9枚 → 2行 */
+  gap: 8px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.gallery-thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 2px solid #c9c9c9;
+  background: #fff;
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .2s, border-color .2s;
+}
+
+.gallery-thumb:hover {
+  opacity: 1;
+}
+
+.gallery-thumb.is-active {
+  border-color: #333;
+  opacity: 1;
+}
+
+.article-body .gallery-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gallery-main {
+  margin: 0;
+}
+
+.gallery-caption {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/*--------------------------------
+ 要件定義
+---------------------------------*/
+.excel-table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 14px;
+    width: 100%;
+    max-width: 900px;
+}
+/* 通常のセル */
+.excel-table td {
+    border: 1px solid #d2d0ce;
+    padding: 10px 14px;
+    color: #323130;
+    vertical-align: top;
+}
+/* 大カテゴリの行（黄色い区切り行） */
+.category-row {
+    background-color: #fff2cc;
+    font-weight: bold;
+}
+/* 機能カテゴリの列（会員登録 などの列） */
+.subcategory-cell {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    width: 180px;
+}
+/* 機能詳細の列 */
+.feature-cell {
+    line-height: 1.6;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  /* 見出し */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* レイアウト */
+  .wrapper {
+    padding-top: 57px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* ヘッダー */
+  .header .container {
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item a {
+    font-size: 10px;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+
+  /*  メインビジュアル */
+  .mv {
+    height: 40vh;
+  }
+
+  .mv-container {
+    padding: 0 20px;
+  }
+
+  .mv-title {
+    font-size: 30px;
+  }
+  .mv-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .mv-text {
+    top: 75%;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Works */
+  .works-name {
+    font-size: 12px;
+  }
+
+  .works-info {
+    margin-top: 3px;
+  }
+
+  .works-list {
+    justify-content: space-between;
+  }
+
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Skill */
+  .skill-list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-name {
+    margin-bottom: 5px;
+  }
+
+  .skill-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* About */
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+
+  /* 下層ページ */
+  .article {
+    padding: 50px 0;
+  }
+
+  /* 固定ヘッダーの下にタイトルが隠れないよう、上の余白を多めに取る */
+  .article--deco {
+    padding-top: 90px;
+  }
+
+  .article-body h3 {
+    font-size: 16px;
+    padding-left: .8em;
+  }
+
+  .article-body h3:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .article-body p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* 2カラム → 1カラム（ページ一覧をタイトル直下に） */
+  .article-body--two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .article--deco {
+    background: none; /* 1カラムでは右下に空白がないため非表示 */
+  }
+
+  .article-col--pages {
+    order: -1; /* HTML上は後ろでも、スマホでは一番上に表示 */
+    margin-bottom: 30px;
+  }
+
+/*--------------------------------
+ 要件定義
+---------------------------------*/  
+  /* テーブル全体をブロック要素にして外枠を外す */
+  .excel-table, 
+  .excel-table tbody {
+      display: block;
+      width: 100%;
+      box-shadow: none;
+      background-color: transparent;
+  }
+  
+  /* 【変更点】PC用の黄色い見出し行をスマホ用大見出しとして再活用（1回だけ表示される） */
+  .excel-table .category-row {
+      display: block;
+      background-color: transparent;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      padding: 0;
+  }
+  .excel-table .category-row td {
+      display: block;
+      width: 100% !important;
+      border: none;
+      padding: 0;
+      font-size: 15px;
+      color: #0078d4; /* Microsoft風のブルー */
+      font-weight: bold;
+  }
+  /* 最初のカテゴリの上の余白を詰める */
+  .excel-table tbody .category-row:first-child {
+      margin-top: 5px;
+  }
+
+  /* テーブルの「行（tr）」を1つの独立したカードにする */
+  .excel-table tr:not(.category-row) {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      margin-bottom: 12px;
+      border: 1px solid #d2d0ce;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      padding: 12px;
+  }
+  /* 各セルを縦並びにする */
+  .excel-table td {
+      display: block;
+      width: 100% !important; /* PC用の幅指定を打ち消す */
+      border: none;
+      padding: 4px 0;
+  }
+  /* 機能カテゴリ（会員登録 など）の見た目調整 */
+  .excel-table td.subcategory-cell {
+      background-color: transparent;
+      font-size: 15px;
+      color: #323130;
+      padding-bottom: 6px;
+      border-bottom: 1px dashed #e1dfdd;
+  }
+  /* 機能詳細（■ユーザー登録ができる など）の見た目調整 */
+  .excel-table td.feature-cell {
+      font-size: 13px;
+      color: #605e5c;
+      padding-top: 6px;
+  }
+}

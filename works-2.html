@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>HE ZIYIN ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+ </head>
+
+<body>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <img src="img/favicon.ico" alt="favicon">
+          <a href="index.html">HE ZIYIN</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article article--deco">
+        <div class="article-container article-container--wide">
+          <h2 class="article-title">ショッピングサイト</h2>
+          <div class="article-body article-body--two-col">
+
+            <!-- 右カラム：その他の項目 -->
+            <section class="article-col article-col--info">
+            <p>
+              Next.jsで作成したECサイト「SAMURAI Store」です。
+              <br>キッチン用品や家電、インテリア雑貨など、日々の暮らしを彩るアイテムを販売するオンラインショップになります。
+              <br>トップページではおすすめ商品・新着商品・注目商品を紹介し、商品一覧では並べ替えやページ送りをしながら商品を探せます。
+              <br>商品ごとのレビュー評価の表示、お気に入り登録、カートへの追加ができます。
+            </p>
+            <h3>URL</h3>
+            <div style="margin-left: 10px !important;">
+              <h5>webサイト</h5>
+              <p><a href="https://samurai-store-heziyin-c8cb807194f4.herokuapp.com/" target="_blank" rel="noopener">https://samurai-store-heziyin-c8cb807194f4.herokuapp.com/</a></p>
+            
+            <h5 >github</h5>
+              <p><a href="https://github.com/hardBoxzy/nextjs-ec-site" target="_blank" rel="noopener">https://github.com/hardBoxzy/nextjs-ec-site</a></p>
+            </div>
+            <h3>使用技術</h3>
+            <p>TypeScript/Next.js/React/HTML/CSS</p>
+            <h3>実装機能</h3>
+            <table class="excel-table">
+                <tbody>
+                    <!-- ユーザー側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【共通機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">会員登録</td>
+                        <td class="feature-cell">
+                            ■ ログイン、ログアウトができる<br>
+                            ■ パスワードresetができる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">商品情報</td>
+                        <td class="feature-cell">
+                            ■ 商品を閲覧できる<br>
+                            ■ 商品を新着、価格安い順に並べ替えられる<br>
+                            ■ 商品を商品名で検索できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">レビュー投稿</td>
+                        <td class="feature-cell">
+                            ■ レビューを投稿できる<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">お気に入り登録</td>
+                        <td class="feature-cell">
+                            ■ お気に入りの商品を登録、削除できる<br>
+                            ■ お気に入り商品を一覧できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">カート機能</td>
+                        <td class="feature-cell">
+                            ■ 商品をカートに追加できる(ブラウザのCookieに保存)<br>
+                            ■ カート内の商品を一覧できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">注文</td>
+                        <td class="feature-cell">
+                            ■ 外部決済サービスstripeを利用したクレジットカード決済機能で商品を購入できる<br>
+                            ■ 注文履歴を一覧できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">お問い合わせ</td>
+                        <td class="feature-cell">
+                            ■ 氏名、メールアドレス、お問い合わせ内容を入力して送信できる<br>
+                            ■ 必須項目の入力チェックができる
+                        </td>
+                    </tr>
+                    <!-- 管理者側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【管理者側実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">商品管理</td>
+                        <td class="feature-cell">
+                            ■ 商品を一覧、登録、編集、削除できる<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">お問い合わせ管理</td>
+                        <td class="feature-cell">
+                            ■ お問い合わせを一覧できる<br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            </tbody>
+            </table>
+            </section>
+            <!-- 左カラム：ページ一覧 -->
+            <section class="article-col article-col--pages">
+              <div class="gallery">
+                <!-- サムネイル一覧 -->
+                <ul class="gallery-thumbs">
+                  <li><button type="button" class="gallery-thumb is-active" title="トップページ"><img src="img/works-detail/works-store-1.png" alt="トップページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="商品一覧ページ"><img src="img/works-detail/works-store-2.png" alt="商品一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="商品詳細ページ"><img src="img/works-detail/works-store-5.png" alt="商品詳細ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="カートページ"><img src="img/works-detail/works-store-6.png" alt="カートページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="注文確認ページ"><img src="img/works-detail/works-store-7.png" alt="注文確認ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="お気に入り一覧ページ"><img src="img/works-detail/works-store-8.png" alt="お気に入り一覧ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会員マイページ"><img src="img/works-detail/works-store-9.png" alt="会員マイページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="会員情報編集ページ"><img src="img/works-detail/works-store-10.png" alt="会員情報編集ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="パスワード変更ページ"><img src="img/works-detail/works-store-11.png" alt="パスワード変更ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="注文履歴ページ"><img src="img/works-detail/works-store-12.png" alt="注文履歴ページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="商品登録ページ(管理者向け)"><img src="img/works-detail/works-store-13.png" alt="商品登録ページ(管理者向け)"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="商品編集ページ(管理者向け)"><img src="img/works-detail/works-store-14.png" alt="商品編集ページ(管理者向け)"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="お問い合わせ一覧ページ(管理者向け)"><img src="img/works-detail/works-store-15.png" alt="お問い合わせ一覧ページ(管理者向け)"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="お問い合わせページ"><img src="img/works-detail/works-store-3.png" alt="お問い合わせページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="プライバシーポリシーページ"><img src="img/works-detail/works-store-4.png" alt="プライバシーポリシーページ"></button></li>
+                  <li><button type="button" class="gallery-thumb" title="利用規約ページ"><img src="img/works-detail/works-store-16.png" alt="利用規約ページ"></button></li>
+                </ul>
+                <!-- 選択中の画像 -->
+                <figure class="gallery-main">
+                  <figcaption class="gallery-caption">トップページ</figcaption>
+                  <img class="works-detail-img gallery-main-img" src="img/works-detail/works-store-1.png" alt="トップページ">
+                </figure>
+              </div>
+            </section>
+          </div>
+          <div class="home-link">
+            <a href="index.html#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy; 2026 HEZIYIN PORTOFOLIO. All Rights Reserved.</div>
+    </footer>
+    <!-- /footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+  <script src="js/gallery.js"></script></body>
+</html>
