@@ -164,11 +164,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -40px;
+   padding-left: 40px; /* 追加：右に寄せたい分だけ */
 }
 
 .works-item {
-  width: 31.74603%;
-  margin-right: 1.58730%;
+  width: 48.41270%;
+  margin-right: 3.17460%;
   margin-bottom: 40px;
   color: #333;
 }
@@ -178,16 +179,66 @@ img {
   opacity: .8;
 }
 
-.works-item:nth-of-type(3n) {
+.works-item:nth-of-type(2n) {
   margin-right: 0;
 }
 
 .works-img img {
   border: 1px solid #e6e6e6;
+  min-width: 500px;
 }
 
 .works-detail-img {
   border: 2px solid #c9c9c9;
+}
+
+/* 横3個並び（works-list--3col を付けたリストだけに適用） */
+.works-list--3col .works-item {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.works-list--3col .works-item:nth-of-type(2n) {
+  margin-right: 2%;
+}
+
+.works-list--3col .works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+/* 実績はリンクではないので、ホバーしても薄くしない */
+.works-list--3col .works-item:hover {
+  opacity: 1;
+}
+
+.works-list--3col .works-img img {
+  min-width: 0;
+  width: 100%;
+}
+
+/* Sketchfab埋め込み（横2個並び） */
+.sketchfab-embed-wrapper {
+  width: 49%;
+  margin-right: 2%;
+  margin-bottom: 40px;
+}
+
+.sketchfab-embed-wrapper:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+/* Sketchfabの「Learn More」リンク（中央寄せ） */
+.sketchfab-more {
+  margin-top: 40px;
+  padding-left: 40px; /* .works-listのpadding-leftと合わせて、埋め込みの中央にそろえる */
+  text-align: center;
+}
+
+.sketchfab-embed-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
 }
 
 .carousel-parts {
@@ -516,6 +567,13 @@ img {
     line-height: 1.6;
 }
 
+@media screen and (max-width: 1200px) {
+  /* 追加：スマホでは最小幅を無効にする */
+  .works-img img {
+    min-width: 0;
+  }
+}
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -619,7 +677,22 @@ img {
     margin-right: 0;
     margin-bottom: 30px;
   }
+  /* 追加：スマホでは最小幅を無効にする */
+  .works-img img {
+    min-width: 0;
+  }
 
+  /* スマホでは3個並びのリストもindex.htmlと同じ2個並びにする */
+  .works-list--3col .works-item,
+  .works-list--3col .works-item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  /* スマホではSketchfabを1列にする */
+  .sketchfab-embed-wrapper {
+    width: 100%;
+    margin-right: 0;
+  }
   /* Skill */
   .skill-list {
     display: block;
