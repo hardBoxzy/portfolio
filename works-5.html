@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>HE ZIYIN ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <img src="img/favicon.ico" alt="favicon">
+          <a href="index.html">HE ZIYIN</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article article--deco">
+        <div class="article-container article-container--wide">
+          <h2 class="article-title">漢字なぞなぞ</h2>
+          <div class="article-body article-body--two-col">
+
+            <!-- 左カラム：その他の項目 -->
+            <section class="article-col article-col--info">
+            <p>
+              AIを使った漢字クイズゲームです。
+              <br>chatGPT APIを使用して、漢字に関するなぞなぞを生成し、ユーザーがその答えを入力することで、正解か不正解かを判定したり、ヒントを提供したりすることができます。
+              <br>ユーザーのチャットの履歴をDBに保存することで、ユーザーは過去のクイズの結果を確認することができます。ユーザーを識別するためにUUIDを発行してcookieに保存します。
+            </p>
+            <h3>URL</h3>
+            <div style="margin-left: 10px !important;">
+              <h5>webサイト</h5>
+              <p><a href="https://chatbot-heziyin-4f76db168ad5.herokuapp.com/" target="_blank" rel="noopener">https://chatbot-heziyin-4f76db168ad5.herokuapp.com/</a></p>
+          <h5>GitHub</h5>
+              <p><a href="https://github.com/hardBoxzy/chatbot_kanji" target="_blank" rel="noopener">https://github.com/hardBoxzy/chatbot_kanji</a></p>
+            </div>
+            <h3>使用技術</h3>
+            <p>Python/FastAPI/ChatGPT API/JavaScript/HTML/CSS</p>
+            <h3>実装機能（要件定義）</h3>
+            <table class="excel-table">
+                <tbody>
+                    <!-- ユーザー側実装機能 -->
+                    <tr class="category-row">
+                        <td colspan="2">【実装機能】</td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">会話</td>
+                        <td class="feature-cell">
+                            ■AIがなぞなぞを生成して話しかけてくる<br>
+                            ■ ユーザーが答えを入力すると、AIが正解か不正解かを判定して返答する<br>
+                            ■ ユーザーの答えが不正解の場合、AIがヒントを提供できる
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subcategory-cell">履歴</td>
+                        <td class="feature-cell">
+                            ■ ユーザーのチャット履歴をDBに保存できる<br>
+                            ■ 保存された履歴を確認できる
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+
+            <!-- 右カラム：ページ一覧 -->
+            <section class="article-col article-col--pages">
+              <div class="gallery">
+                <!-- サムネイル一覧（2行） -->
+                <ul class="gallery-thumbs">
+                  <li><button type="button" class="gallery-thumb is-active" title="メインページ"><img src="img/works-detail/works-5-1.png" alt="メインページ"></button></li>
+                </ul>
+                <!-- 選択中の画像 -->
+                <figure class="gallery-main">
+                  <figcaption class="gallery-caption">メインページ</figcaption>
+                  <img class="works-detail-img gallery-main-img" src="img/works-detail/works-5-1.png" alt="メインページ">
+                </figure>
+              </div>
+            </section>
+          </div>
+          <div class="home-link">
+            <a href="index.html#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy; 2026 HEZIYIN PORTOFOLIO. All Rights Reserved.</div>
+    </footer>
+    <!-- /footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -206,8 +206,26 @@ img {
   margin-right: 0;
 }
 
+/* 最終段の端数を中央寄せにする（間隔は1段目と同じ2%） */
+.works-list--center {
+  justify-content: center;
+}
+
+.works-list--center .works-item:last-child {
+  margin-right: 0;
+}
+
+/* 作品詳細ページの仮アカウント情報（小さめの文字） */
+.article-body span.account-info {
+  font-size: 0.7em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* 実績はリンクではないので、ホバーしても薄くしない */
-.works-list--3col .works-item:hover {
+.works-list--3col div.works-item:hover {
   opacity: 1;
 }
 
