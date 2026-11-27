@@ -17,4 +17,17 @@ $(function () {
     return false;
   });
 
+  //Sketchfabファサード：クリックされたらiframeに差し替える
+  $(".sketchfab-facade").on("click", function () {
+    var $facade = $(this);
+    var $iframe = $("<iframe>", {
+      title: $facade.data("title"),
+      src: $facade.data("src"),
+      frameborder: 0,
+      allow: "autoplay; fullscreen; xr-spatial-tracking",
+      allowfullscreen: true,
+    });
+    $facade.replaceWith($iframe);
+  });
+
 });
